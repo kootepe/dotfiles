@@ -1,0 +1,12 @@
+return {
+  {
+    "stevedylandev/flexoki-nvim",
+  },
+
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "flexoki",
+  --   },
+  -- },
+}

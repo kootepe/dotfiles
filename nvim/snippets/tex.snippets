@@ -1,0 +1,44 @@
+snippet item tavata
+ \\item[-] 
+
+snippet lst list
+  \\begin{enumerate}[leftmargin=*]
+	\\item[-] $0
+  \\end{enumerate}
+
+snippet q "tex newrow"
+  \\\\
+
+snippet bf "tex lihava"
+  \textbf{$0}
+
+snippet texdoc "tex document init"
+  \documentclass[parskip=full]{scrartcl}
+  \usepackage[utf8]{inputenc}
+  \usepackage[left=2cm, top=2.5cm]{geometry}
+  %\usepackage{mathptmx}
+  \usepackage{inconsolata}
+  \renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be typewriter style
+  %\usepackage[T1]{fontenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{setspace}
+  \usepackage{enumitem}
+  \usepackage{amsmath}
+  \usepackage{lipsum}
+  \usepackage{textcomp}
+  \usepackage{gensymb}
+  \setlist{nosep}
+  \hfuzz=100pt
+  \hbadness=10000
+
+
+  \begin{document}
+  \begin{flushright}
+  ${1: Oma nimi}\\\\
+  ${2: Yliopiston nimi}\\\\
+  ${3: Kurssin numero}\\\\
+  ${4: DDMMYYYY}\\\\
+  ${5: Tehtävän nimi}\\\\
+  \end{flushright}
+  $0
+  \end{document}
