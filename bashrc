@@ -137,7 +137,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PS1='\[\e[38;5;160;1m\]\t \[\e[38;5;46m\]\u\n\[\e[0;38;5;39m\]\w\n\[\e[0;1m\]>> \[\e[97m\]$()\[\e[0m\]'
+export PS1='\[\e[38;5;160;1m\]\t \[\e[38;5;46m\]\u\n\[\e[0;38;5;39m\]\w\n\[\e[92m\]  \[\e[0m\]$()\[\e[0m\]'
 # export PS1="\[\e[31;1m\]\t \[\e[032;1m\]\u \n\[\e[34;1m\]\w \[\e[37m\]\n>> "
 
 function rem_image() {
