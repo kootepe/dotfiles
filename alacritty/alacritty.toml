@@ -45,13 +45,13 @@ size = 6.5
   [font.bold]
   family = "monospace"
 
-  [font.italics]
-  family = "monospace"
-  style = "Italics"
+  # [font.italics]
+  # family = "monospace"
+  # style = "Italics"
 
-  [font.bold_italics]
-  family = "monospace"
-  style = "Bold Italics"
+  # [font.bold_italics]
+  # family = "monospace"
+  # style = "Bold Italics"
 
   [font.offset]
   x = 0
