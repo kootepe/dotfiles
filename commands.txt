@@ -1,0 +1,4 @@
+ln -s -f ~/dotfiles/bashrc ~/.bashrc
+ln -s -f ~/dotfiles/alacritty ~/.config/alacritty
+ln -s -f ~/dotfiles/tmux ~/.config/tmux
+ln -s -f ~/dotfiles/nvim ~/.config/nvim
