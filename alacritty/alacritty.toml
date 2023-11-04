@@ -36,7 +36,7 @@ history = 10_000
 multiplier = 3
 
 [font]
-size = 6.5
+size = 11.5
 
   [font.normal]
   family = "iosevka"
