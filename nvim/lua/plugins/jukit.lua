@@ -4,6 +4,5 @@ return { {
   ft = {
     "ipynb",
     "jupyter",
-    "json",
   },
 } }
