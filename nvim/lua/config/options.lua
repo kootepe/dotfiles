@@ -35,3 +35,5 @@ g.vimtex_view_general_viewer = "zathura"
 g.vimtex_view_general_options = "--unique file:@pdf\\#src:@line@tex"
 g.vimtex_compiler_method = "latexmk"
 o.ignorecase = true
+
+vim.filetype.add({ pattern = { [".*.ipynb"] = "ipynb" } })
