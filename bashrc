@@ -160,6 +160,10 @@ function docker_clean() {
 alias lsd="ls -d */"
 
 # script for running darktable export and image stack
-source /home/eerokos/macropipe/macropipe.sh
+if [ -d "../macropipe/" ]; then
+	source /home/eerokos/macropipe/macropipe.sh
+else
+	break
+fi
 . "$HOME/.cargo/env"
 source /home/eerokos/alacritty/extra/completions/alacritty.bash
