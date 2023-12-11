@@ -159,7 +159,7 @@ function docker_clean() {
 
 alias lsd="ls -d */"
 
-alias lsf="~/dotfiles/filecount.sh"
+alias lsc="~/dotfiles/filecount.sh"
 
 # script for running darktable export and image stack
 if [ -d "../macropipe/" ]; then
