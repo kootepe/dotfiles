@@ -161,6 +161,8 @@ alias lsd="ls -d */"
 
 alias lsc="~/dotfiles/filecount.sh"
 
+alias lsft="find . -name '*.?*' -type f | rev | cut -d. -f1 | rev  | tr '[:upper:]' '[:lower:]' | sort | uniq --count | sort -rn"
+
 alias lspwd="~/dotfiles/locate_pwd.sh"
 # script for running darktable export and image stack
 if [ -d "../macropipe/" ]; then
