@@ -167,8 +167,6 @@ alias lspwd="~/dotfiles/locate_pwd.sh"
 # script for running darktable export and image stack
 if [ -d "../macropipe/" ]; then
 	source /home/eerokos/macropipe/macropipe.sh
-else
-	break
 fi
 . "$HOME/.cargo/env"
 source /home/eerokos/alacritty/extra/completions/alacritty.bash
