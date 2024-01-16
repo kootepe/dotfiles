@@ -39,7 +39,7 @@ multiplier = 3
 size = 10.5
 
   [font.normal]
-  family = "iosevka"
+  family = "Iosevka Term Nerd Font"
   style = "extended"
 
   [font.bold]
@@ -55,7 +55,7 @@ size = 10.5
 
   [font.offset]
   x = 0
-  y = -1
+  y = -2
 
   [font.glyph_offset]
   x = 0
