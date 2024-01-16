@@ -5,6 +5,8 @@ ipc_socket = true
 
 [env]
 TERM = "alacritty"
+# brighter colors for tmux
+TERM = "tmux-256color"
 
 [window]
 decorations = "full"
