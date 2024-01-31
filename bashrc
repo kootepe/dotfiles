@@ -161,8 +161,13 @@ alias lsd="ls -d */"
 
 alias lsc="~/dotfiles/filecount.sh"
 
+# print X row in file with awk
+# awk 'FNR==8{print;nextfile}' *.data
+
 alias lsft="find . -name '*.?*' -type f | rev | cut -d. -f1 | rev  | tr '[:upper:]' '[:lower:]' | sort | uniq --count | sort -rn"
 
+# source ~/dotfiles/print_cols.sh
+alias print_cols="~/dotfiles/print_cols.sh"
 alias sudoes="sudo -E -s"
 alias lspwd="~/dotfiles/locate_pwd.sh"
 # script for running darktable export and image stack
@@ -170,4 +175,5 @@ if [ -d "../macropipe/" ]; then
 	source /home/eerokos/macropipe/macropipe.sh
 fi
 . "$HOME/.cargo/env"
+complete -f -X '!*.@(zip|ghg)' unzip
 source /home/eerokos/alacritty/extra/completions/alacritty.bash
