@@ -6,6 +6,7 @@ local g = vim.g
 --
 o.encoding = "utf-8"
 o.cursorline = true
+o.cursorcolumn = true
 --
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
