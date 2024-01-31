@@ -38,15 +38,19 @@ history = 10_000
 multiplier = 3
 
 [font]
-size = 10.5
+size = 16.5
 
   [font.normal]
-  family = "Iosevka Term Nerd Font"
+  family = "IosevkaTerm Nerd Font Medium Extended"
   style = "extended"
 
   [font.bold]
-  family = "monospace"
+  family = "IosevkaTerm Nerd Font ExtraBold Extended"
+  style = "extended"
 
+  [font.italic]
+  family = "IosevkaTerm Nerd Font Medium Extended Obl"
+  style = "extended Oblique"
   # [font.italics]
   # family = "monospace"
   # style = "Italics"
@@ -56,7 +60,7 @@ size = 10.5
   # style = "Bold Italics"
 
   [font.offset]
-  x = 0
+  x = -1
   y = -2
 
   [font.glyph_offset]
@@ -69,14 +73,14 @@ transparent_background_colors = false
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "0x150712"
+background = "0x00080F"
 foreground = "0xabb2bf"
 dim_foreground = "None"
 bright_foreground = "0xe6efff"
 
 [colors.cursor]
 text = "0x000000"
-cursor = "0xF433FF"
+cursor = "0x07EA00"
 
 [colors.vi_mode_cursor]
 text = "CellBackground"
@@ -159,7 +163,7 @@ unfocused_hollow = true
 thickness = 0.15
 
 [cursor.style]
-shape = "block"
+shape = "beam"
 blinking = "on"
 
 [shell]
