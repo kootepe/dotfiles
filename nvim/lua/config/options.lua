@@ -16,7 +16,7 @@ o.guicursor = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
 --
 o.wrap = true
 --
-o.textwidth = 72
+o.textwidth = 80
 --
 o.formatoptions = "tcro"
 o.tabstop = 4
