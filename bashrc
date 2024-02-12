@@ -170,6 +170,7 @@ alias lsft="find . -name '*.?*' -type f | rev | cut -d. -f1 | rev  | tr '[:upper
 alias print_cols="~/dotfiles/print_cols.sh"
 alias sudoes="sudo -E -s"
 alias lspwd="~/dotfiles/locate_pwd.sh"
+alias chargetlp="sudo tlp setcharge 94 95 BAT0"
 # script for running darktable export and image stack
 if [ -d "../macropipe/" ]; then
 	source /home/eerokos/macropipe/macropipe.sh
