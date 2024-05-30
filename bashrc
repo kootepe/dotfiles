@@ -178,5 +178,5 @@ if [ -d "../macropipe/" ]; then
 	source /home/eerokos/macropipe/macropipe.sh
 fi
 . "$HOME/.cargo/env"
-complete -f -X '!*.@(zip|ghg)' unzip
+complete -f -X '!*.@(zip|ghg|data)' unzip
 source /home/eerokos/alacritty/extra/completions/alacritty.bash
