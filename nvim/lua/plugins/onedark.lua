@@ -11,7 +11,9 @@ return {
         functions = "bold",
       },
       highlights = {
+        ["Hlargs"] = { fg = "orange", fmt = "italic,bold" },
         ["@lsp.type.parameter"] = { fg = "orange", fmt = "italic,bold" },
+        -- ["@variable.builtin.python"] = { fg = "red", fmt = "italic" },
         ["NormalFloat"] = { bg = "None" },
         ["@none"] = { fg = "none" },
         ["Cursor"] = { bg = "none" },
