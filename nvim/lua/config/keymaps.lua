@@ -16,10 +16,15 @@ local unmap = vim.keymap.del
 -- map("n", "<C-down>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window down" })
 -- map("n", "<C-up>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 -- map("n", "<C-right>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window right" })
+map("n", "<A-l>", "<cmd> BufferLineMoveNext<CR>", { desc = "Move buffer backward" })
+map("n", "<A-h>", "<cmd> BufferLineMovePrev<CR>", { desc = "Move buffer forward" })
+
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window left" })
 map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window down" })
 map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window right" })
+-- { "S-ö", "<cmd>BufferLineMoveNext<CR>", desc = "Move buffer forward" },
+-- { "S-ä", "<cmd>BufferLineMovePrev<CR>", desc = "Move buffer backward" },
 -- map("n", "<C-<left>>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window left" })
 -- map("n", "<C-<down>>", "<cmd> TmuxNavigateDown<CR>", { desc = "Window down" })
 -- map("n", "<C-<up>>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
