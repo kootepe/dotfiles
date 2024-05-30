@@ -4,6 +4,7 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
+        -- numbers = "ordinal" | "buffer_id",
         always_show_bufferline = true,
         indicator = {
           icon = "▎", -- this should be omitted if indicator style is not 'icon'
