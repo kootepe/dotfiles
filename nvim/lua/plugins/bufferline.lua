@@ -13,15 +13,9 @@ return {
       },
     },
     keys = {
-      { "<leader>bp", "<Cmd>BufferLineTogglePin<CR>", desc = "Toggle pin" },
-      { "<leader>bP", "<Cmd>BufferLineGroupClose ungrouped<CR>", desc = "Delete non-pinned buffers" },
-      { "<leader>bo", "<Cmd>BufferLineCloseOthers<CR>", desc = "Delete other buffers" },
-      { "<leader>br", "<Cmd>BufferLineCloseRight<CR>", desc = "Delete buffers to the right" },
-      { "<leader>bl", "<Cmd>BufferLineCloseLeft<CR>", desc = "Delete buffers to the left" },
-      { "<A-,>", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev buffer" },
-      { "<A-.>", "<cmd>BufferLineCycleNext<cr>", desc = "Next buffer" },
-      { "[b", "<cmd>BufferLineCyclePrev<cr>", desc = "Prev buffer" },
-      { "]b", "<cmd>BufferLineCycleNext<cr>", desc = "Next buffer" },
+      -- { "<leader>bl", "<Cmd>BufferLineCloseLeft<CR>", desc = "Delete buffers to the left" },
+      -- { "S-ö", "<cmd>BufferLineMoveNext<CR>", desc = "Move buffer forward" },
+      -- { "S-ä", "<cmd>BufferLineMovePrev<CR>", desc = "Move buffer backward" },
     },
   },
 }
