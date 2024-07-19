@@ -13,6 +13,9 @@ return {
   {
     "luk400/vim-jukit",
     lazy = true,
+    keys = {
+      { "<leader>os", "<cmd>call jukit#splits#output()<cr>", { desc = "Open output split" } },
+    },
     -- cond = vim.env.VAR_NAME == 0,
     ft = {
       "ipynb",
