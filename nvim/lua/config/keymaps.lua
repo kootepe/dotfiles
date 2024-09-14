@@ -25,6 +25,7 @@ map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window right" })
 
 map("n", "<C-p>", "<cmd> BufferLinePick<CR>", { desc = "Pick buffer" })
+map("n", "<C-z>", "<nop>", { desc = "" })
 -- { "S-ö", "<cmd>BufferLineMoveNext<CR>", desc = "Move buffer forward" },
 -- { "S-ä", "<cmd>BufferLineMovePrev<CR>", desc = "Move buffer backward" },
 -- map("n", "<C-<left>>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window left" })
