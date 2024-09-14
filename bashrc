@@ -161,6 +161,10 @@ alias lsd="ls -d */"
 
 alias lsc="~/dotfiles/filecount.sh"
 
+lsh() {
+  ls "$@" | head -n 10
+}
+
 # print X row in file with awk
 # awk 'FNR==8{print;nextfile}' *.data
 
@@ -175,7 +179,7 @@ alias eddyuh="cd /home/eerokos/opiskelu/eddy_course/code/eddyuh/ && /home/eeroko
 alias chargetlp="sudo tlp setcharge 94 95 BAT0"
 # script for running darktable export and image stack
 if [ -d "../macropipe/" ]; then
-	source /home/eerokos/macropipe/macropipe.sh
+  source /home/eerokos/macropipe/macropipe.sh
 fi
 . "$HOME/.cargo/env"
 complete -f -X '!*.@(zip|ghg|data)' unzip
