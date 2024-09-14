@@ -184,3 +184,13 @@ fi
 . "$HOME/.cargo/env"
 complete -f -X '!*.@(zip|ghg|data)' unzip
 source /home/eerokos/alacritty/extra/completions/alacritty.bash
+alias vpnup="~/dotfiles/vpnup.sh"
+alias pizza="python3 ~/dotfiles/pizza.py"
+alias looper="~/dotfiles/10s.sh"
+alias ram="~/dotfiles/ram_usage.sh"
+alias swouts="swaymsg -t get_outputs"
+alias swtree="swaymsg -t get_tree"
+export PATH="$PATH:$HOME/.local/bin:/usr/sbin"
+export QT_QPA_PLATFORM=wayland
+export PATH="$PATH:/usr/bin/gdal"
+export GDAL_DATA="/usr/share/gdal"
