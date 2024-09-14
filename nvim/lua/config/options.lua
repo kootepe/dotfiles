@@ -4,6 +4,7 @@
 local o = vim.o
 local g = vim.g
 --
+g.python3_host_prog = "/home/eerokos/miniconda3/bin/python3"
 o.encoding = "utf-8"
 o.cursorline = true
 o.cursorcolumn = true
