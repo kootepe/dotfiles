@@ -39,3 +39,5 @@ g.vimtex_compiler_method = "latexmk"
 o.ignorecase = true
 
 vim.filetype.add({ pattern = { [".*.ipynb"] = "ipynb" } })
+vim.filetype.add({ pattern = { [".*.CR1X"] = "vb" } })
+vim.filetype.add({ pattern = { [".*.cr1x"] = "vb" } })
