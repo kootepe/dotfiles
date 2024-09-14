@@ -12,11 +12,13 @@ return {
       },
       highlights = {
         ["Hlargs"] = { fg = "orange", fmt = "italic,bold" },
+        ["MiniIndentscopeSymbol"] = { fg = "#FF10F0", fmt = "italic,bold" },
         ["@lsp.type.parameter"] = { fg = "orange", fmt = "italic,bold" },
         -- ["@variable.builtin.python"] = { fg = "red", fmt = "italic" },
         ["NormalFloat"] = { bg = "None" },
         ["@none"] = { fg = "none" },
         ["Cursor"] = { bg = "none" },
+        ["Comment"] = { fg = "grey" },
         -- ["CursorColumn"] = { bg = "#2f353b" },
         -- ["CursorLine"] = { bg = "#2f353b" },
         ["CursorColumn"] = { bg = "#0d283f" },
