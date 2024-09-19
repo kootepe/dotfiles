@@ -17,6 +17,7 @@ local unmap = vim.keymap.del
 -- map("n", "<C-up>", "<cmd> TmuxNavigateUp<CR>", { desc = "Window up" })
 -- map("n", "<C-right>", "<cmd> TmuxNavigateRight<CR>", { desc = "Window right" })
 map("n", "<A-l>", "<cmd> BufferLineMoveNext<CR>", { desc = "Move buffer backward" })
+map("n", "<leader>cn", "<cmd>Neogen<CR>", { desc = "Generate doc" })
 map("n", "<A-h>", "<cmd> BufferLineMovePrev<CR>", { desc = "Move buffer forward" })
 
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Window left" })
