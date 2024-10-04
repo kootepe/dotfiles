@@ -190,6 +190,7 @@ alias looper="~/dotfiles/10s.sh"
 alias ram="~/dotfiles/ram_usage.sh"
 alias swouts="swaymsg -t get_outputs"
 alias swtree="swaymsg -t get_tree"
+alias fdo="~/dotfiles/fdo.sh"
 export PATH="$PATH:$HOME/.local/bin:/usr/sbin"
 export QT_QPA_PLATFORM=wayland
 export PATH="$PATH:/usr/bin/gdal"
