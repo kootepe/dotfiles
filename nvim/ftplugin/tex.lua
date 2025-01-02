@@ -5,3 +5,4 @@ map("n", "<leader>vc", "<Plug>(vimtex-compile)", { desc = "Vimtex Compile" })
 map("n", "<leader>vv", "<Plug>(vimtex-view)", { desc = "Vimtex View" })
 
 g.vimtex_indent_lists = {}
+o.textwidth = 0
