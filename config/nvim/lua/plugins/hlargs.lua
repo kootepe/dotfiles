@@ -5,20 +5,21 @@ return {
       color = "#d60000",
       highlight = {},
       excluded_filetypes = {},
-      paint_arg_declarations = true,
+      paint_arg_declarations = false,
       paint_arg_usages = true,
       paint_catch_blocks = {
         declarations = false,
         usages = false,
       },
       extras = {
-        named_parameters = true,
+        named_parameters = false,
       },
       hl_priority = 10000,
       excluded_argnames = {
         declarations = {},
         usages = {
           python = { "self", "cls" },
+          -- python = { "cls" },
           lua = { "self" },
         },
       },

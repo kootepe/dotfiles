@@ -2,7 +2,7 @@
 {
   // "layer": "top", // Waybar at top layer
   // "position": "bottom", // Waybar position (top|bottom|left|right)
-  "height": 20, // Waybar height (to be removed for auto height)
+  "height": 24, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
@@ -26,10 +26,11 @@
     "temperature",
     "backlight",
     "keyboard-state",
-    "sway/language",
+    // "sway/language",
     "battery",
     "battery#bat2",
-    "clock",
+    // "clock",
+    "custom/clock",
     "tray",
     "custom/power"
   ],
@@ -50,7 +51,7 @@
   //     }
   // },
   "keyboard-state": {
-    "numlock": true,
+    "numlock": false,
     "capslock": true,
     "format": "{name} {icon}",
     "format-icons": {
@@ -188,7 +189,7 @@
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
     "format-wifi": "{essid} ({signalStrength}%) ",
-    "format-ethernet": "{ipaddr}/{cidr} ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰈀",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
@@ -198,7 +199,7 @@
     // "scroll-step": 1, // %, can be a float
     "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon}   {format_source}",
-    "format-bluetooth-muted": "󰸈 {icon} {format_source}",
+    "format-bluetooth-muted": "󰸈 {icon}   {format_source}",
     "format-muted": "󰸈  {format_source}",
     "format-source": "{volume}% ",
     "format-source-muted": "",
@@ -240,5 +241,11 @@
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
     }
+  },
+  "custom/clock": {
+    "exec": "date +'  %Y-%m-%d %H:%M:%S  '  ",
+    "interval": 1,
+    "tooltip": false,
+    "on-click": "alacritty -e 'calcurse'"
   }
 }

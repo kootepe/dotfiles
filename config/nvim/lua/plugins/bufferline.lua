@@ -4,6 +4,9 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
+        highlights = {
+          fill = { bg = "#1e2030" },
+        },
         -- numbers = "ordinal" | "buffer_id",
         always_show_bufferline = true,
         indicator = {

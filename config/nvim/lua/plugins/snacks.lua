@@ -1,6 +1,17 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    scroll = {
+      enabled = false,
+    },
+    indent = {
+      enabled = true,
+      animate = {
+        enabled = false,
+        duration = { step = 5, duration = 100 },
+      },
+      chunk = { enabled = true, char = { arrow = ">" } },
+    },
     dashboard = {
       preset = {
         header = [[

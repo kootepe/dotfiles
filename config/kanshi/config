@@ -1,13 +1,10 @@
 profile notebook {
-  output eDP-1 enable mode 2560x1440@60.012 scale 1.0
+  output "AU Optronics 0xD291 Unknown" enable mode 1920x1200@60.026 position 0,0 scale 1
+  output "HP Inc. HP E27q G5 CNC338137C" enable mode 2560x1440@59.951 position 1920,0 scale 1
 }
 
 profile work {
-  output DP-6 enable mode 3440x1440@59.973 position 0,0 scale 1
-  output eDP-1 disable
-}
-
-profile work {
-  output DP-5 enable mode 3440x1440@59.973 position 0,0 scale 1
+  output "Lenovo Group Limited P34w-20 VVE14899" enable mode 3440x1440@59.973 position 0,0 scale 1
+  output "Lenovo Group Limited P34w-20 Unknown" enable mode 3440x1440@59.973 position 3440,0 scale 1
   output eDP-1 disable
 }

@@ -1,6 +1,6 @@
 return {
   {
-    "lervag/vimtex",
+    "kootepe/vimtex",
     ft = { "tex", "latex" },
   },
 }

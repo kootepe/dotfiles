@@ -1,21 +1,52 @@
+# dbus-run-session sway $@
 # Default config for sway
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+#
+
 
 ### Variables
 # exec --no-startup-id gnome-keyring-daemon
+# exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+
+# this needs to run at startup?
+exec dbus-update-activation-environment --all
+# exec eval $(gnome-keyring-daemon --start)
+
+xwayland enable
+exec export SSH_AUTH_SOCK
 seat * hide_cursor 8000
 exec --no-startup-id nm-applet --indicator
-# exec kanshi
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# exec --no-startup-id dunst
+# exec --no-startup-id nm-applet
+# exec --no-startup-id gnome-network-manager --indicator
+# exec mako
+exec swaync
+gaps inner 5
+# gaps outer 3
+
 exec kanshi
 exec_always kill -1 $(pidof kanshi)
 exec_always "systemctl --user restart kanshi.service"
+
 # exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
-# exec --no-startup-id nm-applet
 
 for_window [app_id="python3"] floating enable
+
+# default_border none
+# default_floating_border none
+default_border pixel 2
+titlebar_padding 1
+titlebar_border_thickness 0
+font pango:monospace 0.01
+# client.focused "#9f1209" "#9f1209" "#ffffff" "#9f1209"
+# client.focused "#727174" "#727174" "#ffffff" "#727174"
+client.focused "#ff25e1" "#ff25e1" "#ffffff" "#ff25e1"
+# client.focused "#7800ff" "#7800ff" "#ffffff" "#7800ff"
 # for_window [app_id="org.remmina.Remmina"] floating enable
 # Remmina Remote Desktop Client
 # Logo key. Use Mod1 for Alt.
@@ -27,18 +58,19 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term alacritty
+# set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | wmenu | xargs swaymsg exec --
-set $menu dmenu_path | /home/eerokos/projects/fuzzel/bld/release/fuzzel | xargs swaymsg exec --
+set $menu dmenu_path | /home/eekoskin22/projects/fuzzel/bld/release/fuzzel | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
 ### Output configuration
 #
-set $system_theme 'Adwaita-dark'
-set $system_icons 'Numix-Square'
+# set $system_theme 'Adwaita-dark'
+# set $system_icons 'Numix-Square'
 # set $system_dpi_scaling_factor 1
 set $cursor_size 24
 #set $cursor_theme Breeze
@@ -51,9 +83,9 @@ set $titlebar_font Cantarell
 set $gnome-schema org.gnome.desktop.interface
 
 exec_always {
-  gsettings set $gnome-schema gtk-theme $system_theme
-  gsettings set $gnome-schema icon-theme $system_icons
-  gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
+  # gsettings set $gnome-schema gtk-theme $system_theme
+  # gsettings set $gnome-schema icon-theme $system_icons
+  # gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
   gsettings set $gnome-schema cursor-theme $cursor_theme
   gsettings set $gnome-schema cursor-size $cursor_size
 }
@@ -62,7 +94,8 @@ exec_always {
 seat seat0 xcursor_theme $cursor_theme $cursor_size
 for_window [app_id="org.remmina.Remmina"] shortcuts_inhibitor enable
 for_window [title="Remmina Remote Desktop Client"] floating enable
-for_window [class="soilfluxpro.exe"] floating enable
+for_window [title="Figure 1"] floating enable
+# for_window [class="soilfluxpro.exe"] floating enable
 
 # Fonts (For sway window titles only)
 # font pango:$titlebar_font $titlebar_text_size
@@ -72,7 +105,7 @@ bindswitch lid:off output eDP-1 enable
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/eerokos/Pictures/IMG_8820.jpg fill
+output * bg /home/eekoskin22/Pictures/IMG_8820.jpg fill
 # output eDP-1 res 2560x1440@60.012Hz pos 0,0 scale 1
 # workspace 1 output eDP-1
 # output DP-6 pos 0,0  scale 1
@@ -137,7 +170,8 @@ output * bg /home/eerokos/Pictures/IMG_8820.jpg fill
     input type:keyboard {
         xkb_layout "fi"
     }
-  input "2:7:SynPS/2_Synaptics_TouchPad" {
+    
+  input "1739:52839:SYNA8022:00_06CB:CE67_Touchpad" {
       dwt enabled
       tap enabled
       natural_scroll enabled
@@ -217,7 +251,7 @@ output * bg /home/eerokos/Pictures/IMG_8820.jpg fill
     bindsym $mod+7 workspace number 7
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
+    # bindsym $mod+0 workspace number 10
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
@@ -228,7 +262,7 @@ output * bg /home/eerokos/Pictures/IMG_8820.jpg fill
     bindsym $mod+Shift+7 move container to workspace number 7
     bindsym $mod+Shift+8 move container to workspace number 8
     bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
+    # bindsym $mod+Shift+0 move container to workspace number 10
     # Note: workspaces can have any name you want, not just numbers.
     # We just use 1-10 as the default.
 #
@@ -292,6 +326,8 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+#dunstctl close all
+# bindsym $mod+n exec dunstctl close-all
 
 #
 # Status Bar:
@@ -299,7 +335,7 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     # status_command i3blocks
-    swaybar_command waybar
+    swaybar_command /usr/local/bin/waybar
     # status_command i3status
     position top
     # tray_output eDP-1
@@ -316,4 +352,15 @@ bar {
     # }
 }
 
-include /etc/sway/config.d/*
+# Do the following command in a terminal emulator when you need the virtual output:
+# swaymsg create_output
+
+# output HEADLESS-1 resolution 1280x720 position 0,1080
+# output HEADLESS-1 bg "#220900" solid_color
+bindsym $mod+0 workspace sshr
+bindsym $mod+Shift+0 move container to workspace sshr
+# include /etc/sway/config.d/*
+bindsym $mod+Shift+n exec swaync-client -t -sw
+# exec systemctl --user import-environment
+# exec "systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+

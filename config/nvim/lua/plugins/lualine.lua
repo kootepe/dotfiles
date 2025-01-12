@@ -1,7 +1,7 @@
 return {
   "nvim-lualine/lualine.nvim",
   opts = {
-    theme = "onedark",
+    -- theme = "onedark",
   },
   -- cond = false,
 }

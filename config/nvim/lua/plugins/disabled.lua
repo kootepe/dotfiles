@@ -1,10 +1,9 @@
 return {
   { "RRethy/vim-illuminate", enabled = false },
-  { "echasnovski/mini.indentscope", enabled = true },
+  { "echasnovski/mini.indentscope", enabled = false },
   { "shellRaining/hlchunk.nvim", enabled = false },
-  { "lukas-reineke/indent-blankline.nvim", enabled = true },
+  { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "m-demare/hlargs.nvim", enabled = true },
-  { "Rrethy/vim-hexokinase", enabled = false },
   { "Rrethy/vim-hexokinase", enabled = false },
   { "nvimdev/dashboard-nvim", enabled = false },
   -- { "hrsh7th/cmp-buffer", enabled = false },
