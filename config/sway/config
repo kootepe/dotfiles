@@ -63,7 +63,7 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | wmenu | xargs swaymsg exec --
-set $menu dmenu_path | /home/eekoskin22/projects/fuzzel/bld/release/fuzzel | xargs swaymsg exec --
+set $menu dmenu_path | ~/projects/fuzzel/bld/release/fuzzel | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
 
@@ -105,7 +105,7 @@ bindswitch lid:off output eDP-1 enable
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/eekoskin22/Pictures/IMG_8820.jpg fill
+output * bg ~/Pictures/IMG_8820.jpg fill
 # output eDP-1 res 2560x1440@60.012Hz pos 0,0 scale 1
 # workspace 1 output eDP-1
 # output DP-6 pos 0,0  scale 1
