@@ -9,14 +9,28 @@ target_dir="$HOME/.config"
 
 # Loop through all directories in the source directory
 for dir in "$source_dir"/*/; do
-    # Get the base name of the directory
-    base_name=$(basename "$dir")
+  # Get the base name of the directory
+  base_name=$(basename "$dir")
 
-    # Create the symbolic link in the target directory
-    ln -sfn "$dir" "$target_dir/$base_name"
+  # Create the symbolic link in the target directory
+  ln -sfn "$dir" "$target_dir/$base_name"
 
-    echo "Linked $dir to $target_dir/$base_name"
+  echo "Linked $dir to $target_dir/$base_name"
 done
 
 echo "All directories in $source_dir have been linked to $target_dir."
 
+source_dir="$HOME/dotfiles/local/share"
+target_dir="$HOME/.local/share"
+
+for dir in "$source_dir"/*/; do
+  # Get the base name of the directory
+  base_name=$(basename "$dir")
+
+  # Create the symbolic link in the target directory
+  ln -sfn "$dir" "$target_dir/$base_name"
+
+  echo "Linked $dir to $target_dir/$base_name"
+done
+
+echo "All directories in $source_dir have been linked to $target_dir."
