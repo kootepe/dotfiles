@@ -33,7 +33,7 @@ resize_increments = false
   general = "Alacritty"
 
 [scrolling]
-history = 10_000
+history = 20_000
 multiplier = 3
 
 [font]
