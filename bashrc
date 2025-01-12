@@ -124,14 +124,14 @@ export VISUAL='nvim'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/eekoskin22/miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
+__conda_setup="$('~/miniconda3/bin/conda' 'shell.bash' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
   eval "$__conda_setup"
 else
-  if [ -f "/home/eekoskin22/miniconda3/etc/profile.d/conda.sh" ]; then
-    . "/home/eekoskin22/miniconda3/etc/profile.d/conda.sh"
+  if [ -f "~/miniconda3/etc/profile.d/conda.sh" ]; then
+    . "~/miniconda3/etc/profile.d/conda.sh"
   else
-    export PATH="/home/eekoskin22/miniconda3/bin:$PATH"
+    export PATH="~/miniconda3/bin:$PATH"
   fi
 fi
 unset __conda_setup
@@ -183,7 +183,7 @@ if [ -d "../macropipe/" ]; then
 fi
 . "$HOME/.cargo/env"
 complete -f -X '!*.@(zip|ghg|data)' unzip
-source /home/eekoskin22/projects/alacritty/extra/completions/alacritty.bash
+source ~/dotfiles/config/alacritty/alacritty.bash
 alias vpnup="~/dotfiles/vpnup.sh"
 alias pizza="python3 ~/dotfiles/pizza.py"
 alias looper="~/dotfiles/10s.sh"
