@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=alacritty
+Icon=foot
+Terminal=false
+Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;
+Name=Alacritty
+GenericName=Terminal
+Comment=Alacritty terminal
