@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Setup Screen
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet\\ Clients\\\\Setup\\ Screen.lnk
+Type=Application
+StartupNotify=true
+Icon=159E_SetupScreen.0
+StartupWMClass=setupscreen.exe

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Network Planner
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Tools\\\\Network\\ Planner.lnk
+Type=Application
+StartupNotify=true
+Icon=D250_network_planner.0
+StartupWMClass=network_planner.exe

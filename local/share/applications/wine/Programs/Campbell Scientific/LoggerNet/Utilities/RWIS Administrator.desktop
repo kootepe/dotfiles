@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=RWIS Administrator
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Utilities\\\\RWIS\\ Administrator.lnk
+Type=Application
+StartupNotify=true
+Icon=3FE2_rwis-admin.0
+StartupWMClass=rwis-admin.exe

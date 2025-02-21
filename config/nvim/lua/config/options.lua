@@ -10,6 +10,7 @@ o.encoding = "utf-8"
 o.cursorline = true
 o.foldmethod = "expr"
 o.cursorcolumn = true
+-- o.shell = "/bin/bash"
 --
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1

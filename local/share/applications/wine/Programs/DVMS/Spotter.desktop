@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Spotter
+Exec=env WINEPREFIX="/home/eekoskin22/.wine64" wine-stable 'C:\\Program Files\\DVMS\\VAU\\VAU.exe'
+# Exec=env WINEPREFIX=/home/eekoskin22/.wine wine-stable 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Campbell Scientific\\LoggerNet\\Program Editors\\CRBasic Editor.lnk'
+Type=Application
+StartupNotify=true
+Comment=Starts Spotter
+Path=/home/eekoskin22/.wine64/dosdevices/c:/Program Files/DVMS/VAU/
+Icon=C597_SP.0
+StartupWMClass=vau.exe

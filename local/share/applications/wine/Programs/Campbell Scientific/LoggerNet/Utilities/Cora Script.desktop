@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Cora Script
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Utilities\\\\Cora\\ Script.lnk
+Type=Application
+StartupNotify=true
+Icon=62A1_cora_cmd.0
+StartupWMClass=cora_cmd.exe

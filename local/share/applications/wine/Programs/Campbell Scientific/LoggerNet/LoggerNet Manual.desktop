@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=LoggerNet Manual
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet\\ Manual.lnk
+Type=Application
+StartupNotify=true
+StartupWMClass=loggernet.pdf

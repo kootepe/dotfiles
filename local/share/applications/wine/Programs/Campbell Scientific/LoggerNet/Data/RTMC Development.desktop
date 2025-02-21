@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=RTMC Development
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Data\\\\RTMC\\ Development.lnk
+Type=Application
+StartupNotify=true
+Icon=14C3_RTMC_Development.0
+StartupWMClass=rtmc_development.exe

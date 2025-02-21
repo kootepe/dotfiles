@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=LoggerNet
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet.lnk
+Type=Application
+StartupNotify=true
+Icon=3F1F_ToolBar.0
+StartupWMClass=toolbar.exe

@@ -1,0 +1,1 @@
+{"NONE": [{"output_type": "stream", "name": "stdout", "text": "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-3-9b56b5292529>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    local g = vim.g\u001b[0m\n\u001b[0m          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n\n"}]}

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Task Master
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet\\ Clients\\\\Task\\ Master.lnk
+Type=Application
+StartupNotify=true
+Icon=4B34_TaskMaster.0
+StartupWMClass=taskmaster.exe

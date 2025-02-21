@@ -29,7 +29,7 @@ if ! command -v fd &>/dev/null; then
 fi
 
 # Run `fd` to search for files based on user input (pass additional fd options if needed)
-files=$(fd --max-depth 2 -E "*.tdf" "$@")
+files=$(fd --max-depth 4 -E "*.tdf" "$@")
 
 # Check if any files were found
 if [ -z "$files" ]; then
@@ -60,7 +60,7 @@ echo
 
 # Open the selected file with the chosen program
 if [ -n "${file_map[$choice]}" ]; then
-  $program "${file_map[$choice]}"
+  nohup $program "${file_map[$choice]}" </dev/null >/dev/null 2>&1 &
 else
   echo "Invalid choice."
 fi

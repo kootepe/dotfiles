@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Transformer
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Program\\ Editors\\\\Transformer.lnk
+Type=Application
+StartupNotify=true
+Icon=1F0E_Transformer.0
+StartupWMClass=transformer.exe

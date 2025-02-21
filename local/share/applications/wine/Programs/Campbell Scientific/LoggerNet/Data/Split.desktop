@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Split
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Data\\\\Split.lnk
+Type=Application
+StartupNotify=true
+Icon=49EC_SPLITW.0
+StartupWMClass=splitw.exe

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Card Convert
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Data\\\\Card\\ Convert.lnk
+Type=Application
+StartupNotify=true
+Icon=68DA_CardConvert.0
+StartupWMClass=cardconvert.exe

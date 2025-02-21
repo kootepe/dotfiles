@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=LogTool
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Tools\\\\LogTool.lnk
+Type=Application
+StartupNotify=true
+Icon=FFA5_LogTool.0
+StartupWMClass=logtool.exe

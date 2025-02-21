@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=CRBasic Editor
+#Exec=env WINEPREFIX="/home/eerokos/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Program\\ Editors\\\\CRBasic\\ Editor.lnk
+Exec=env WINEPREFIX=/home/eekoskin22/.wine wine-stable 'C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Campbell Scientific\\LoggerNet\\Program Editors\\CRBasic Editor.lnk'
+Type=Application
+StartupNotify=true
+Icon=5C88_CRBasicEditor.0
+StartupWMClass=crbasiceditor.exe

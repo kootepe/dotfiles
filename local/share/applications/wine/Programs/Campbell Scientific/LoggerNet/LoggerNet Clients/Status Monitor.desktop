@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Status Monitor
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet\\ Clients\\\\Status\\ Monitor.lnk
+Type=Application
+StartupNotify=true
+Icon=8E9E_StatusMonitor.0
+StartupWMClass=statusmonitor.exe

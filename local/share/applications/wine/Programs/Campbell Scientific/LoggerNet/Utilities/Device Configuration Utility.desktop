@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Device Configuration Utility
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Utilities\\\\Device\\ Configuration\\ Utility.lnk
+Type=Application
+StartupNotify=true
+Icon=4540_devconfig.0
+StartupWMClass=devconfig.exe

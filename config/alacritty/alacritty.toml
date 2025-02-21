@@ -1,4 +1,5 @@
 #builtin_box_drawing = true
+[general]
 live_config_reload = true
 working_directory = "None"
 ipc_socket = true
@@ -37,34 +38,24 @@ history = 20_000
 multiplier = 3
 
 [font]
-size = 16.5
+size = 13
 
   [font.normal]
-  family = "IosevkaTerm Nerd Font Medium Extended"
-  style = "extended"
+  family = "IosevkaTerm Nerd Font Medium"
 
   [font.bold]
-  family = "IosevkaTerm Nerd Font ExtraBold Extended"
-  style = "extended"
+  family = "IosevkaTerm Nerd Font ExtraBold"
 
   [font.italic]
-  family = "IosevkaTerm Nerd Font Medium Extended Obl"
-  style = "extended Oblique"
-  # [font.italics]
-  # family = "monospace"
-  # style = "Italics"
-
-  # [font.bold_italics]
-  # family = "monospace"
-  # style = "Bold Italics"
+  family = "IosevkaTerm Nerd Font Medium Obl"
 
   [font.offset]
   x = -1
-  y = -2
+  y = -5
 
   [font.glyph_offset]
   x = 0
-  y = 0
+  y = -2
 
 [colors]
 indexed_colors = [ ]
@@ -167,8 +158,8 @@ thickness = 0.15
 shape = "beam"
 blinking = "on"
 
-[shell]
-program = "/bin/bash"
+[terminal]
+shell = "/bin/bash"
 
 [hints]
 alphabet = "jfkdls;ahgurieowpq"

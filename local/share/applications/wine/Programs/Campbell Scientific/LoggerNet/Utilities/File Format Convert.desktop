@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=File Format Convert
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Utilities\\\\File\\ Format\\ Convert.lnk
+Type=Application
+StartupNotify=true
+Icon=9E8A_FileFormatConvert.0
+StartupWMClass=fileformatconvert.exe

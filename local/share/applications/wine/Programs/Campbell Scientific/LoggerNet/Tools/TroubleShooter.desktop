@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=TroubleShooter
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Tools\\\\TroubleShooter.lnk
+Type=Application
+StartupNotify=true
+Icon=F23B_Troubleshooter.0
+StartupWMClass=troubleshooter.exe

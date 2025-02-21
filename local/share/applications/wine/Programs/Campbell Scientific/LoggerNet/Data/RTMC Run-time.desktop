@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=RTMC Run-time
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Data\\\\RTMC\\ Run-time.lnk
+Type=Application
+StartupNotify=true
+Icon=E2E7_RTMC_Run-time.0
+StartupWMClass=rtmc_run-time.exe

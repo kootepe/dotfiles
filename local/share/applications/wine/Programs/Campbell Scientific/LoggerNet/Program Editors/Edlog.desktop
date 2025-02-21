@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Edlog
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Program\\ Editors\\\\Edlog.lnk
+Type=Application
+StartupNotify=true
+Icon=090F_EdlogW.0
+StartupWMClass=edlogw.exe

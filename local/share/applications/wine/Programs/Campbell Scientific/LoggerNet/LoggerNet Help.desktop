@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=LoggerNet Help
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet\\ Help.lnk
+Type=Application
+StartupNotify=true
+Icon=0E8F_LoggerNet.0
+StartupWMClass=loggernet.chm

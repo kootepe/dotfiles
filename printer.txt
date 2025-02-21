@@ -1,0 +1,18 @@
+lpadmin -p RPS1 -v ipp://rps1.univ.yo.oulu.fi\secureprint -P ~/Downloads/Canon-iR-ADV_C5235_5240-Postscript-Canon.ppd -E -o auth-info-required=eekoskin22,Oulu-avain-kissa1
+Oulu-avain-kissa1
+
+lpadmin -p RPS1 -v smb://UNIV\eekoskin22:Oulu-avain-kissa1@rps1.univ.yo.oulu.fi/secureprint -P ~/Downloads/Canon-iR-ADV_C5235_5240-Postscript-Canon.ppd -E -o auth-info-required=username,password
+
+lpadmin -p RPS1 -v smb://rps1.univ.yo.oulu.fi/secureprint -P ~/Downloads/Canon-iR-ADV_C5235_5240-Postscript-Canon.ppd -E -o auth-info-required=username,password
+lpadmin -p RPS1 -v smb://rps1.univ.yo.oulu.fi/secureprint -P ~/Downloads/Canon-iR-ADV_C5235_5240-Postscript-Canon.ppd -E
+
+lpadmin -p RPS1 -v smb://univ/uname:password@rps1.univ.yo.oulu.fi/secureprint -P ~/Downloads/Canon-iR-ADV_C5235_5240-Postscript-Canon.ppd -E -o auth-info-required=none -o media=A4
+
+username on:
+univ/eekoskin22
+
+lp -d RPS1 lirunaytelappu2.pdf -o media=A4 -t lirunayte -H immediate
+lp -d RPS1 lirunaytelappu2.pdf -o media=A4 -t lirunayte -H immediate
+lpr -P RPS1 lirunaytelappu2.pdf -C "ASD" -# 2 -o media=A4
+lpr -P RPS1 lirunaytelappu2.pdf -J "ASDdd" -# 2 -o media=A4
+lpr -P RPS1 lirunaytelappu2.pdf -T "ASDdd" -# 2 -o media=A4

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Connect Screen
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\LoggerNet\\ Clients\\\\Connect\\ Screen.lnk
+Type=Application
+StartupNotify=true
+Icon=A3D5_ConnectScreen.0
+StartupWMClass=connectscreen.exe

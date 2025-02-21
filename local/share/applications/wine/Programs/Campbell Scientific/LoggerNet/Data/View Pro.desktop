@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=View Pro
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Data\\\\View\\ Pro.lnk
+Type=Application
+StartupNotify=true
+Icon=7ABD_View_Pro.0
+StartupWMClass=view_pro.exe

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Short Cut
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Program\\ Editors\\\\Short\\ Cut.lnk
+Type=Application
+StartupNotify=true
+Icon=E5A3_SCWIN.0
+StartupWMClass=scwin.exe

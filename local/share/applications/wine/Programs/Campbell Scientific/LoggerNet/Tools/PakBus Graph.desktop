@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=PakBus Graph
+Exec=env WINEPREFIX="/home/eekoskin22/.wine" wine-stable C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start\\ Menu\\\\Programs\\\\Campbell\\ Scientific\\\\LoggerNet\\\\Tools\\\\PakBus\\ Graph.lnk
+Type=Application
+StartupNotify=true
+Icon=F179_PakBusGraph.0
+StartupWMClass=pakbusgraph.exe
